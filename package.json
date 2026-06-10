@@ -1,12 +1,6 @@
-"dependencies": {
-  "@supabase/supabase-js": "^2.108.0",
-  "clsx": "2.1.1",
-  "express": "^4.19.2",
-  "framer-motion": "^12.40.0",
-  "lucide-react": "^1.17.0",
-  "react": "19.2.6",
-  "react-dom": "19.2.6",
-  "react-router-dom": "^7.17.0",
-  "recharts": "^3.8.1",
-  "tailwind-merge": "3.4.0"
-}
+{
+  "name": "react-vite-tailwind",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts":
