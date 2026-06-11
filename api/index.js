@@ -166,11 +166,14 @@ app.get("/api/shopify/callback", async (req, res) => {
       });
     }
 
-    const { error } = await supabase.from("shopify_connections").upsert(
+   const { error } = await supabase.from("shopify_connections").upsert(
   {
     shop_domain: shop,
+    shop: shop,
     access_token: tokenData.access_token,
     scope: tokenData.scope || "",
+    status: "connected",
+    updated_at: new Date().toISOString(),
   },
   {
     onConflict: "shop_domain",
