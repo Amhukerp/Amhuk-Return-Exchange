@@ -218,7 +218,7 @@ app.get("/api/shopify/order-lookup", async (req, res) => {
     const { data: connection, error: connectionError } = await supabase
       .from("shopify_connections")
       .select("*")
-      .eq("shop", shop)
+      .eq("shop_domain", shop)
       .single();
 
     if (connectionError || !connection?.access_token) {
